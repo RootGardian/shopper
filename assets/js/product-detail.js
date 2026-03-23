@@ -46,6 +46,19 @@ function renderProductDetail(container, product) {
                 </select>
             </div>
         `;
+    } else if (product.category === 'parfums') {
+        colorOptionsHtml = `
+            <div class="options-group">
+                <label for="color-select">Contenance / Volume</label>
+                <select id="color-select" class="select-box">
+                    <option value="125ml" selected>125ml</option>
+                    <option value="63ml">63ml</option>
+                    <option value="250ml">250ml</option>
+                    <option value="500ml">500ml</option>
+                    <option value="1 Litre">1 Litre</option>
+                </select>
+            </div>
+        `;
     }
     
     container.innerHTML = `
@@ -87,6 +100,22 @@ function setupEventListeners(product) {
     const inputQty = document.getElementById('qty-input');
     const btnAddCart = document.getElementById('btn-add-cart');
     const colorSelect = document.getElementById('color-select');
+    const priceDisplay = document.querySelector('.detail-price');
+    
+    let currentMultiplier = 1;
+
+    if (product.category === 'parfums' && colorSelect) {
+        colorSelect.addEventListener('change', () => {
+            const vol = colorSelect.value;
+            if (vol === '63ml') currentMultiplier = 0.5;
+            if (vol === '125ml') currentMultiplier = 1;
+            if (vol === '250ml') currentMultiplier = 2;
+            if (vol === '500ml') currentMultiplier = 4;
+            if (vol === '1 Litre') currentMultiplier = 8;
+            
+            priceDisplay.textContent = formatPrice(product.price * currentMultiplier);
+        });
+    }
     
     btnMinus.addEventListener('click', () => {
         let val = parseInt(inputQty.value);
@@ -101,6 +130,8 @@ function setupEventListeners(product) {
     btnAddCart.addEventListener('click', () => {
         const qty = parseInt(inputQty.value);
         const color = colorSelect ? colorSelect.value : null;
-        Cart.addItem(product, qty, color);
+        
+        const itemToAdd = { ...product, price: product.price * currentMultiplier };
+        Cart.addItem(itemToAdd, qty, color);
     });
 }

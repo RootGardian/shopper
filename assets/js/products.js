@@ -59,7 +59,7 @@ const products = [
     // --- PARFUMERIE ---
     {
         id: "pa1",
-        name: "Musc Tahara ",
+        name: "Musc Tahara",
         price: 180,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG10ky-Pt5D4c8RuJnTcC8mawq_tBtnMCZmw&s",
         description: "Musc Tahara blanc épais et onctueux, texture crémeuse. Senteur coton et propreté fraîche.",
@@ -70,7 +70,7 @@ const products = [
     {
         id: "pa2",
         name: "Huile de Parfum Pure Mûre",
-        price: 250,
+        price: 100,
         image: "https://www.awgifts.fr/wi/225736.jpeg",
         description: "Extrait de parfum Oud boisé et intense. Tenue longue durée de plusieurs jours sur les vêtements.",
         category: "parfums",
@@ -79,8 +79,8 @@ const products = [
     },
     {
         id: "pa3",
-        name: "Huile de Parfum Pure Parisienne - 500ml",
-        price: 190,
+        name: "Huile de Parfum Pure Parisienne",
+        price: 100,
         image: "https://www.awgifts.fr/wi.php?id=243368&s=800x800",
         description: "Un musc oriental fruité et sucré aux notes de vanille, d'ambre et de musc blanc.",
         category: "parfums",
@@ -89,8 +89,8 @@ const products = [
     },
     {
         id: "pa4",
-        name: "Huile de Parfum Pure Géranium - 500ml",
-        price: 160,
+        name: "Huile de Parfum Pure Géranium",
+        price: 100,
         image: "https://www.awgifts.fr/wi/228438.jpeg",
         description: "Extrait d'huile essentielle de fleur de jasmin pour une senteur douce, florale et apaisante.",
         category: "parfums",
