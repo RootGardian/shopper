@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderCart() {
     const container = document.getElementById('cart-container');
     const items = Cart.getItems();
-    
+
     if (items.length === 0) {
         container.innerHTML = `
             <div class="empty-state">
@@ -17,7 +17,7 @@ function renderCart() {
         `;
         return;
     }
-    
+
     let itemsHtml = items.map(item => {
         const colorText = item.color ? `Couleur: ${item.color}` : '';
         return `
@@ -39,9 +39,9 @@ function renderCart() {
             </div>
         `;
     }).join('');
-    
+
     const total = Cart.getTotal();
-    
+
     container.innerHTML = `
         <div class="cart-layout">
             <div class="cart-items">
@@ -68,7 +68,7 @@ function renderCart() {
                     <input type="text" id="client-name" class="input-box" required placeholder="Votre nom">
                     
                     <label for="client-whatsapp">Numéro WhatsApp *</label>
-                    <input type="tel" id="client-whatsapp" class="input-box" required placeholder="+212 6... ou 06...">
+                    <input type="tel" id="client-whatsapp" class="input-box" required placeholder="Numero whatsapp">
                     
                     <button type="submit" class="btn btn-whatsapp" style="margin-top: 10px; width: 100%;">
                         Commander sur WhatsApp
@@ -77,7 +77,7 @@ function renderCart() {
             </div>
         </div>
     `;
-    
+
     setupCartListeners();
 }
 
@@ -86,7 +86,7 @@ function setupCartListeners() {
     const minusBtns = document.querySelectorAll('.btn-minus-cart');
     const plusBtns = document.querySelectorAll('.btn-plus-cart');
     const removeBtns = document.querySelectorAll('.remove-btn');
-    
+
     minusBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             const itemElement = e.target.closest('.cart-item');
@@ -94,14 +94,14 @@ function setupCartListeners() {
             const color = itemElement.dataset.color || null;
             const input = itemElement.querySelector('.qty-input-cart');
             let val = parseInt(input.value);
-            
+
             if (val > 1) {
                 Cart.updateQuantity(id, color, val - 1);
                 renderCart();
             }
         });
     });
-    
+
     plusBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             const itemElement = e.target.closest('.cart-item');
@@ -109,14 +109,14 @@ function setupCartListeners() {
             const color = itemElement.dataset.color || null;
             const input = itemElement.querySelector('.qty-input-cart');
             let val = parseInt(input.value);
-            
+
             if (val < 99) {
                 Cart.updateQuantity(id, color, val + 1);
                 renderCart();
             }
         });
     });
-    
+
     // Removals
     removeBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -127,7 +127,7 @@ function setupCartListeners() {
             renderCart();
         });
     });
-    
+
     // Checkout form
     const checkoutForm = document.getElementById('checkout-form');
     if (checkoutForm) {
@@ -143,32 +143,32 @@ function generateWhatsAppOrder() {
     const phone = document.getElementById('client-whatsapp').value.trim();
     const items = Cart.getItems();
     const total = Cart.getTotal();
-    
+
     if (!name || !phone) {
         showToast("Veuillez remplir tous les champs");
         return;
     }
-    
+
     let message = `*NOUVELLE COMMANDE* 🛍️\n\n`;
     message += `*Client :* ${name}\n`;
     message += `*Téléphone :* ${phone}\n\n`;
     message += `*Détails de la commande :*\n`;
-    
+
     items.forEach((item, index) => {
         message += `${index + 1}. ${item.name}`;
         if (item.color) message += ` (${item.color})`;
-        message += `\n   ➤ ${item.quantity} x ${item.price} Dhs\n`;
+        message += `\n   ➤ ${item.quantity} x ${formatPrice(item.price)}\n`;
     });
-    
-    message += `\n*Total de la commande : ${total} Dhs*\n\n`;
+
+    message += `\n*Total de la commande : ${formatPrice(total)}*\n\n`;
     message += `Merci de confirmer ma commande !`;
-    
+
     // The target WhatsApp number
     const targetNumber = "212782830238";
-    
+
     const encodedMessage = encodeURIComponent(message);
     const waUrl = `https://wa.me/${targetNumber}?text=${encodedMessage}`;
-    
+
     // Open WhatsApp
     window.open(waUrl, '_blank');
 }

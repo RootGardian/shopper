@@ -1,10 +1,20 @@
 // assets/js/main.js
 
-/**
- * Utility: Format price to MAD (Moroccan Dirham)
- */
-function formatPrice(price) {
-    return price.toLocaleString('fr-MA', { style: 'currency', currency: 'MAD' });
+let currentCurrency = localStorage.getItem('morocco_shopper_currency') || 'MAD';
+const EXCHANGE_RATE_CFA = 63;
+
+window.setCurrency = function(currency) {
+    currentCurrency = currency;
+    localStorage.setItem('morocco_shopper_currency', currency);
+    location.reload();
+};
+
+function formatPrice(priceMAD) {
+    if (currentCurrency === 'CFA') {
+        const priceCFA = priceMAD * EXCHANGE_RATE_CFA;
+        return priceCFA.toLocaleString('fr-FR') + ' FCFA';
+    }
+    return priceMAD.toLocaleString('fr-MA', { style: 'currency', currency: 'MAD' });
 }
 
 /**
@@ -123,6 +133,15 @@ function injectWhatsAppButton() {
 
 // Initialize common features
 document.addEventListener('DOMContentLoaded', () => {
+    const btns = document.querySelectorAll('.curr-btn');
+    btns.forEach(btn => {
+        if (btn.dataset.curr === currentCurrency) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+
     Cart.updateCartCounter();
     injectWhatsAppButton();
 });
