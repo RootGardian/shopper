@@ -142,6 +142,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Mobile Dropdown toggle support
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+    dropdowns.forEach(dropdown => {
+        const navLink = dropdown.querySelector('.nav-link');
+        if (navLink) {
+            navLink.addEventListener('click', function(e) {
+                // Prevent default if it's an anchor tag or just bubbling
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-dropdown')) {
+            dropdowns.forEach(d => d.classList.remove('active'));
+        }
+    });
+
     Cart.updateCartCounter();
     injectWhatsAppButton();
 });

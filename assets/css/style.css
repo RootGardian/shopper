@@ -176,7 +176,8 @@ header {
   color: var(--primary);
 }
 
-.nav-dropdown:hover .nav-dropdown-content {
+.nav-dropdown:hover .nav-dropdown-content,
+.nav-dropdown.active .nav-dropdown-content {
   display: block;
   animation: fadeIn 0.3s ease;
 }
