@@ -149,7 +149,10 @@ function generateWhatsAppOrder() {
         return;
     }
 
-    let message = `*NOUVELLE COMMANDE* 🛍️\n\n`;
+    const orderNumber = 'CMD-' + Math.floor(Math.random() * 1000000);
+
+    let message = `*NOUVELLE COMMANDE* 🛍️\n`;
+    message += `Numéro : ${orderNumber}\n\n`;
     message += `*Client :* ${name}\n`;
     message += `*Téléphone :* ${phone}\n\n`;
     message += `*Détails de la commande :*\n`;
@@ -163,12 +166,9 @@ function generateWhatsAppOrder() {
     message += `\n*Total de la commande : ${formatPrice(total)}*\n\n`;
     message += `Merci de confirmer ma commande !`;
 
-    // The target WhatsApp number
     const targetNumber = "212782830238";
-
     const encodedMessage = encodeURIComponent(message);
     const waUrl = `https://wa.me/${targetNumber}?text=${encodedMessage}`;
 
-    // Open WhatsApp
     window.open(waUrl, '_blank');
 }

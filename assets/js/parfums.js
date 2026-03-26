@@ -11,22 +11,24 @@ document.addEventListener('DOMContentLoaded', () => {
         renderParfums(parfumsProducts);
         
         // Setup filters
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // Update active class
-                filterBtns.forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-                
-                const filterValue = e.target.dataset.filter;
-                
-                if (filterValue === 'all') {
-                    renderParfums(parfumsProducts);
-                } else {
-                    const filtered = parfumsProducts.filter(p => p.subCategory === filterValue);
-                    renderParfums(filtered);
-                }
+        if (filterBtns && filterBtns.length > 0) {
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    // Update active class
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    
+                    const filterValue = e.target.dataset.filter;
+                    
+                    if (filterValue === 'all') {
+                        renderParfums(parfumsProducts);
+                    } else {
+                        const filtered = parfumsProducts.filter(p => p.subCategory === filterValue);
+                        renderParfums(filtered);
+                    }
+                });
             });
-        });
+        }
     }
 });
 

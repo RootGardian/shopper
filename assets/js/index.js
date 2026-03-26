@@ -1,9 +1,22 @@
 // assets/js/index.js
 document.addEventListener('DOMContentLoaded', () => {
     const productList = document.getElementById('product-list');
+    const filterSelect = document.getElementById('index-category-select');
     
     if (productList && typeof products !== 'undefined') {
         renderProducts(products);
+        
+        if (filterSelect) {
+            filterSelect.addEventListener('change', (e) => {
+                const category = e.target.value;
+                if (category === 'all') {
+                    renderProducts(products);
+                } else {
+                    const filtered = products.filter(p => p.category === category);
+                    renderProducts(filtered);
+                }
+            });
+        }
     }
 });
 

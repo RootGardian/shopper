@@ -2,31 +2,175 @@
 const products = [
     // --- ABAYAS ---
     {
-        id: "ab1",
-        name: "Abaya Dubai Royale",
-        price: 850,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02SaT0-NRP7M-k30KIf31P6rO2VvTImNANw&s",
-        description: "Abaya noire élégante avec broderies dorées, coupe ample et fluide. Parfaite pour les grandes occasions.",
-        category: "abaya",
-        colors: ["Noir/Or"]
+        id: "Abaya_f1",
+        name: "Abaya femme (JF01)",
+        price: 100,
+        image: "assets/img/jel1.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
     },
     {
-        id: "ab2",
-        name: "Abaya Nida Soie",
-        price: 650,
-        image: "https://anaqainspired.com/cdn/shop/articles/floral-bouqet.png?v=1678626888",
-        description: "En tissu Nida soyeux de qualité premium. Style minimaliste, livrée avec son foulard assorti.",
-        category: "abaya",
-        colors: ["Beige clair", "Rose poudré", "Gris", "Noir"]
+        id: "Abaya_f2",
+        name: "Abaya femme (JF02)",
+        price: 100,
+        image: "assets/img/Jel2.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
     },
     {
-        id: "ab3",
-        name: "Abaya Kimono Orientale",
-        price: 700,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwmVo2wL3U3tSbjdPX-1NRzj5aZdZqzM8mLw&s",
-        description: "Abaya coupe kimono ouverte, idéale à porter sur une robe ajustée.",
-        category: "abaya",
-        colors: ["Vert émeraude", "Bleu nuit", "Bordeaux"]
+        id: "Abaya_f3",
+        name: "Abaya femme (JF03)",
+        price: 100,
+        image: "assets/img/jel3.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f4",
+        name: "Abaya femme (JF04)",
+        price: 100,
+        image: "assets/img/jel4.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f5",
+        name: "Abaya femme (JF05)",
+        price: 100,
+        image: "assets/img/jel5.jpeg",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f6",
+        name: "Abaya femme (JF06)",
+        price: 100,
+        image: "assets/img/jel6.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f7",
+        name: "Abaya femme (JF07)",
+        price: 100,
+        image: "assets/img/jel7.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f8",
+        name: "Abaya femme (JF08)",
+        price: 100,
+        image: "assets/img/jel8.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f9",
+        name: "Abaya femme (JF09)",
+        price: 100,
+        image: "assets/img/jel9.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f10",
+        name: "Abaya femme (JF10)",
+        price: 100,
+        image: "assets/img/jel10.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f11",
+        name: "Abaya femme (JF11)",
+        price: 100,
+        image: "assets/img/jel11.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "Abaya_f12",
+        name: "Abaya femme (JF12)",
+        price: 100,
+        image: "assets/img/jel12.png",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    // --- JELLABAS ---
+    {
+        id: "jel_h1",
+        name: "Djelaba homme (DH01)",
+        price: 100,
+        image: "assets/img/homme5.jpeg",
+        description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
+        category: "vetements",
+        subCategory: "homme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "jel_h2",
+        name: "Djelaba homme (DH02)",
+        price: 100,
+        image: "assets/img/homme2.jpeg",
+        description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
+        category: "vetements",
+        subCategory: "homme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "jel_h3",
+        name: "Djelaba homme (DH03)",
+        price: 100,
+        image: "assets/img/homme3.png",
+        description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
+        category: "vetements",
+        subCategory: "homme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "jel_h4",
+        name: "Djelaba homme (DH04)",
+        price: 100,
+        image: "assets/img/homme4.png",
+        description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
+        category: "vetements",
+        subCategory: "homme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
+    {
+        id: "jel_h5",
+        name: "Djelaba homme (DH05)",
+        price: 100,
+        image: "assets/img/homme5.jpeg",
+        description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
+        category: "vetements",
+        subCategory: "homme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
     },
     // --- GAMME NILA ---
     {
@@ -35,7 +179,8 @@ const products = [
         price: 120,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZF_aDTk1tSZgK1ZB40lLXv3QJsr1KpWDf-A&s",
         description: "Poudre de Nila bleu 100% pure du Sahara. Éclaircit le teint, adoucit les zones rugueuses et unifie la peau.",
-        category: "nila",
+        category: "cosmetique",
+        subCategory: "nila",
         colors: []
     },
     {
@@ -44,7 +189,8 @@ const products = [
         price: 65,
         image: "https://images.coinafrique.com/5041865_uploaded_image1_1731505629.jpg",
         description: "Savon purifiant à la poudre de Nila et enrichi à l'huile d'argan pour l'éclat du corps.",
-        category: "nila",
+        category: "cosmetique",
+        subCategory: "nila",
         colors: []
     },
     {
@@ -53,7 +199,8 @@ const products = [
         price: 150,
         image: "https://www.orgaflam.com/wp-content/uploads/2022/06/masque-nila-bleu-orgaflam-2.webp",
         description: "Masque prêt à l'emploi. Réduit les taches brunes et le masque de grossesse pour une peau lumineuse.",
-        category: "nila",
+        category: "cosmetique",
+        subCategory: "nila",
         colors: []
     },
     // --- PARFUMERIE ---
@@ -61,40 +208,125 @@ const products = [
         id: "pa1",
         name: "Musc Tahara",
         price: 180,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG10ky-Pt5D4c8RuJnTcC8mawq_tBtnMCZmw&s",
+        image: "assets/img/musc.png",
         description: "Musc Tahara blanc épais et onctueux, texture crémeuse. Senteur coton et propreté fraîche.",
         category: "parfums",
         subCategory: "musc",
         colors: []
     },
     {
-        id: "pa2",
-        name: "Huile de Parfum Pure Mûre",
-        price: 100,
-        image: "https://www.awgifts.fr/wi/225736.jpeg",
-        description: "Extrait de parfum Oud boisé et intense. Tenue longue durée de plusieurs jours sur les vêtements.",
-        category: "parfums",
-        subCategory: "huile",
-        colors: []
-    },
-    {
         id: "pa3",
-        name: "Huile de Parfum Pure Parisienne",
+        name: "Musc Vanille",
         price: 100,
-        image: "https://www.awgifts.fr/wi.php?id=243368&s=800x800",
-        description: "Un musc oriental fruité et sucré aux notes de vanille, d'ambre et de musc blanc.",
+        image: "assets/img/musc.png",
+        description: "Un musc blanc fruité et sucré aux notes gourmandes de vanille, d'ambre et de pureté cristalline.",
         category: "parfums",
         subCategory: "musc",
         colors: []
     },
     {
         id: "pa4",
-        name: "Huile de Parfum Pure Géranium",
+        name: "Musc Soleil",
         price: 100,
-        image: "https://www.awgifts.fr/wi/228438.jpeg",
-        description: "Extrait d'huile essentielle de fleur de jasmin pour une senteur douce, florale et apaisante.",
+        image: "assets/img/musc.png",
+        description: "Une fragrance éclatante et chaleureuse qui capture la lumière des agrumes sur un fond de musc doré et rayonnant.",
         category: "parfums",
-        subCategory: "huile",
+        subCategory: "musc",
+        colors: []
+    },
+    {
+        id: "pa5",
+        name: "Musc Ambroisie",
+        price: 100,
+        image: "assets/img/musc.png",
+        description: "Un élixir précieux aux notes divines de miel sauvage et de résines rares, pour un sillage mystique et inoubliable.",
+        category: "parfums",
+        subCategory: "musc",
+        colors: []
+    },
+    {
+        id: "pa6",
+        name: "Musc Solide",
+        price: 100,
+        image: "assets/img/Musc_solide.jpeg",
+        description: "Une concrète de parfum onctueuse et durable, offrant une caresse veloutée de musc pur directement sur la peau.",
+        category: "parfums",
+        subCategory: "musc",
         colors: []
     }
 ];
+
+const parfumsFemme = [
+    "212 Sexy (Carolina Herrera)", "Black Opium (Yves Saint Laurent)", "Burberry Weekend",
+    "Chance (Chanel)", "Cinéma (Yves Saint Laurent)", "Coco Chanel / Coco Mademoiselle",
+    "Elie Saab", "Escada Magnetism", "Evidence (Yves Rocher)", "Good Girl (Carolina Herrera)",
+    "Gucci Bloom", "Hypnotic Poison (Dior)", "J'adore (Dior)", "Joy (Dior)", "Kayali (Kayli)",
+    "Kim K", "L'Interdit (Givenchy)", "La Nuit Trésor (Lancôme)", "La Panthère (Cartier)",
+    "La Petite Robe Noire (Guerlain)", "La Vie est Belle (Lancôme)", "Lady Million (Paco Rabanne)",
+    "Louis Vuitton Passion", "Miracle (Lancôme)", "Miss Dior", "Mon Guerlain",
+    "Mon Paris (Yves Saint Laurent)", "My Way (Armani)", "Olympéa (Paco Rabanne)",
+    "Scandal (Jean Paul Gaultier)", "Si (Armani)", "Twilly (Hermès)",
+    "Victoria's Secret Bombshell", "Zara Women"
+];
+
+const parfumsHomme = [
+    "212 Men (Carolina Herrera)", "Acqua Di Gio (Armani)", "Allure Sport (Chanel)",
+    "Armani Code", "Azzaro (Chrome & Wanted)", "Bad Boy (Carolina Herrera)",
+    "Bleu de Chanel", "Blue Orchid (Oscar)", "Creed Aventus", "Déclaration (Cartier)",
+    "Dior Homme & Dior Homme Sport", "Dolce & Gabbana King (K)", "Eros (Versace)",
+    "Fahrenheit (Dior)", "Fuel For Life (Diesel)", "Gentlemen (Givenchy)",
+    "Hugo Boss Infinite", "Invictus (Paco Rabanne)", "L'Homme Idéal L'Intense (Guerlain)",
+    "La Nuit de l'Homme (Yves Saint Laurent)", "Lacoste Blanc (L.12.12)",
+    "Lacoste Noir (L.12.12)", "Le Mâle Noir (Jean Paul Gaultier)", "One Million (Paco Rabanne)",
+    "Pi (Givenchy)", "Pure XS (Paco Rabanne)", "Sauvage (Dior)", "Stronger With You (Armani)",
+    "Terre d'Hermès", "The One (Dolce & Gabbana)", "Tom Ford Tobacco Vanille (noté Ford Tabago)",
+    "Valentino Uomo", "Zara Men"
+];
+
+const parfumsMixte = [
+    "Baccarat Rouge (Maison Francis Kurkdjian)", "Baccara Vanille", "Bois d'Argent (Dior)",
+    "Ghobar Dahab (Poussière d’or)", "Gucci Oud", "Kalimat", "Khamrah (Lattafa)",
+    "Mesk Al Tahara", "Mokhalat", "Oud Ispahan (Dior)", "Raghba"
+];
+
+let pfId = 1;
+parfumsFemme.forEach(name => {
+    products.push({
+        id: "pfe" + pfId++,
+        name: "Huile de Parfum - " + name,
+        price: 100,
+        image: "assets/img/huile_femme.png",
+        description: "Extrait de parfum haute qualité. Longue tenue garantie (concentré).",
+        category: "parfums",
+        subCategory: "femme",
+        colors: []
+    });
+});
+
+let phId = 1;
+parfumsHomme.forEach(name => {
+    products.push({
+        id: "pho" + phId++,
+        name: "Huile de Parfum - " + name,
+        price: 100,
+        image: "assets/img/huile_homme.png",
+        description: "Extrait de parfum haute qualité. Longue tenue garantie (concentré).",
+        category: "parfums",
+        subCategory: "homme",
+        colors: []
+    });
+});
+
+let pmId = 1;
+parfumsMixte.forEach(name => {
+    products.push({
+        id: "pmi" + pmId++,
+        name: "Huile de Parfum - " + name,
+        price: 100,
+        image: "assets/img/unisex.png",
+        description: "Extrait de parfum haute qualité. Longue tenue garantie (concentré).",
+        category: "parfums",
+        subCategory: "mixte",
+        colors: []
+    });
+});

@@ -129,6 +129,63 @@ header {
   color: var(--primary);
 }
 
+/* Navigation Dropdown */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--card-bg);
+  min-width: 220px;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
+  z-index: 1000;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 0;
+  margin-top: 15px; /* Visual gap */
+  border: 1px solid rgba(201, 162, 91, 0.15);
+}
+
+/* Invisible bridge so mouse doesn't drop hover state */
+.nav-dropdown-content::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 15px;
+}
+
+.nav-dropdown-content a {
+  color: var(--text-main);
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: rgba(201, 162, 91, 0.05);
+  color: var(--primary);
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, 10px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
 .cart-icon {
   position: relative;
   display: flex;
@@ -201,18 +258,36 @@ header {
   border-radius: 2px;
 }
 
-/* Mobile Header */
-@media (max-width: 640px) {
+/* Mobile Header & Responsive Nav */
+@media (max-width: 850px) {
   .header-inner {
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 15px;
   }
   .nav-links {
     order: 3;
     width: 100%;
     justify-content: center;
-    margin-top: 20px;
-    gap: 20px;
+    margin-top: 10px;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .nav-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+  .header-actions {
+    gap: 10px;
+  }
+  .curr-btn {
+    padding: 5px 8px;
+    font-size: 0.8rem;
   }
 }
 
