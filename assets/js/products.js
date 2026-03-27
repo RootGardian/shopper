@@ -121,6 +121,16 @@ const products = [
         subCategory: "femme",
         colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
     },
+    {
+        id: "Abaya_f13",
+        name: "Abaya femme (JF13)",
+        price: 100,
+        image: "assets/img/jel13.jpg",
+        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        category: "vetements",
+        subCategory: "femme",
+        colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
+    },
     // --- JELLABAS ---
     {
         id: "jel_h1",
