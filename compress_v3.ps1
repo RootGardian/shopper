@@ -63,7 +63,7 @@ foreach ($file in $files) {
         Write-Host " -> OK ($newName)" -ForegroundColor Green
     } catch {
         Write-Host " Erreur: $_" -ForegroundColor Red
-        if ($img -ne $null) { $img.Dispose() }
+        if ($null -ne $img) { $img.Dispose() }
     }
 }
 
