@@ -280,21 +280,15 @@ header {
 }
 
 @media (max-width: 480px) {
-  .header-inner {
-    position: relative;
-  }
   .logo {
-    font-size: 1.3rem;
-    max-width: 50%;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
   .header-actions {
-    gap: 10px;
-    margin-right: 35px;
-  }
-  .cart-icon {
-    position: absolute;
-    right: 0;
-    top: 3px;
+    width: 100%;
+    justify-content: space-between;
   }
   .curr-btn {
     padding: 5px 8px;
