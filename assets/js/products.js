@@ -83,10 +83,10 @@ const products = [
     },
     {
         id: "Abaya_f9",
-        name: "Abaya femme (JF09)",
+        name: "Abaya enfant (JF09)",
         price: 100,
         image: "assets/img/jel9.jpg",
-        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        description: "Superbe Abaya pour enfant avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
         subCategory: "femme",
         colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
@@ -123,10 +123,10 @@ const products = [
     },
     {
         id: "Abaya_f13",
-        name: "Abaya femme (JF13)",
+        name: "Abaya enfant (JF13)",
         price: 100,
         image: "assets/img/jel13.jpg",
-        description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
+        description: "Superbe Abaya pour enfant avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
         subCategory: "femme",
         colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
