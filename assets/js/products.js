@@ -4,7 +4,7 @@ const products = [
     {
         id: "Abaya_f1",
         name: "Abaya femme (JF01)",
-        price: 120,
+        price: 110,
         image: "assets/img/jel1.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
