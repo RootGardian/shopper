@@ -183,36 +183,36 @@ const products = [
         colors: ["Noir", "Blanc", "Bleu", "Vert", "Rouge"]
     },
     // --- GAMME NILA ---
-    {
-        id: "ni1",
-        name: "Poudre de Nila Authentique",
-        price: 120,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZF_aDTk1tSZgK1ZB40lLXv3QJsr1KpWDf-A&s",
-        description: "Poudre de Nila bleu 100% pure du Sahara. Éclaircit le teint, adoucit les zones rugueuses et unifie la peau.",
-        category: "cosmetique",
-        subCategory: "nila",
-        colors: []
-    },
-    {
-        id: "ni2",
-        name: "Savon de Nila et Argan",
-        price: 65,
-        image: "https://images.coinafrique.com/5041865_uploaded_image1_1731505629.jpg",
-        description: "Savon purifiant à la poudre de Nila et enrichi à l'huile d'argan pour l'éclat du corps.",
-        category: "cosmetique",
-        subCategory: "nila",
-        colors: []
-    },
-    {
-        id: "ni3",
-        name: "Masque Visage au Nila",
-        price: 150,
-        image: "https://www.orgaflam.com/wp-content/uploads/2022/06/masque-nila-bleu-orgaflam-2.webp",
-        description: "Masque prêt à l'emploi. Réduit les taches brunes et le masque de grossesse pour une peau lumineuse.",
-        category: "cosmetique",
-        subCategory: "nila",
-        colors: []
-    },
+    /* {
+         id: "ni1",
+         name: "Poudre de Nila Authentique",
+         price: 120,
+         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZF_aDTk1tSZgK1ZB40lLXv3QJsr1KpWDf-A&s",
+         description: "Poudre de Nila bleu 100% pure du Sahara. Éclaircit le teint, adoucit les zones rugueuses et unifie la peau.",
+         category: "cosmetique",
+         subCategory: "nila",
+         colors: []
+     },
+     {
+         id: "ni2",
+         name: "Savon de Nila et Argan",
+         price: 65,
+         image: "https://images.coinafrique.com/5041865_uploaded_image1_1731505629.jpg",
+         description: "Savon purifiant à la poudre de Nila et enrichi à l'huile d'argan pour l'éclat du corps.",
+         category: "cosmetique",
+         subCategory: "nila",
+         colors: []
+     },
+     {
+         id: "ni3",
+         name: "Masque Visage au Nila",
+         price: 150,
+         image: "https://www.orgaflam.com/wp-content/uploads/2022/06/masque-nila-bleu-orgaflam-2.webp",
+         description: "Masque prêt à l'emploi. Réduit les taches brunes et le masque de grossesse pour une peau lumineuse.",
+         category: "cosmetique",
+         subCategory: "nila",
+         colors: []
+     },*/
     // --- PARFUMERIE ---
     {
         id: "pa1",
