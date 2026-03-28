@@ -4,7 +4,7 @@ const products = [
     {
         id: "Abaya_f1",
         name: "Abaya femme (JF01)",
-        price: 100,
+        price: 120,
         image: "assets/img/jel1.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -14,7 +14,7 @@ const products = [
     {
         id: "Abaya_f2",
         name: "Abaya femme (JF02)",
-        price: 100,
+        price: 130,
         image: "assets/img/Jel2.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -24,7 +24,7 @@ const products = [
     {
         id: "Abaya_f3",
         name: "Abaya femme (JF03)",
-        price: 100,
+        price: "Rupture de stock",
         image: "assets/img/jel3.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -44,7 +44,7 @@ const products = [
     {
         id: "Abaya_f5",
         name: "Abaya femme (JF05)",
-        price: 100,
+        price: 130,
         image: "assets/img/jel5.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -54,7 +54,7 @@ const products = [
     {
         id: "Abaya_f6",
         name: "Abaya femme (JF06)",
-        price: 100,
+        price: 120,
         image: "assets/img/jel6.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -64,7 +64,7 @@ const products = [
     {
         id: "Abaya_f7",
         name: "Abaya femme (JF07)",
-        price: 100,
+        price: 80,
         image: "assets/img/jel7.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -74,7 +74,7 @@ const products = [
     {
         id: "Abaya_f8",
         name: "Abaya femme (JF08)",
-        price: 100,
+        price: 350,
         image: "assets/img/jel8.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -84,7 +84,7 @@ const products = [
     {
         id: "Abaya_f9",
         name: "Abaya enfant (JF09)",
-        price: 100,
+        price: 80,
         image: "assets/img/jel9.jpg",
         description: "Superbe Abaya pour enfant avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -94,7 +94,7 @@ const products = [
     {
         id: "Abaya_f10",
         name: "Abaya femme (JF10)",
-        price: 100,
+        price: 120,
         image: "assets/img/jel10.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -104,7 +104,7 @@ const products = [
     {
         id: "Abaya_f11",
         name: "Abaya femme (JF11)",
-        price: 100,
+        price: 130,
         image: "assets/img/jel11.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -114,7 +114,7 @@ const products = [
     {
         id: "Abaya_f12",
         name: "Abaya femme (JF12)",
-        price: 100,
+        price: 120,
         image: "assets/img/jel12.jpg",
         description: "Superbe Abaya pour femme avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -124,7 +124,7 @@ const products = [
     {
         id: "Abaya_f13",
         name: "Abaya enfant (JF13)",
-        price: 100,
+        price: 110,
         image: "assets/img/jel13.jpg",
         description: "Superbe Abaya pour enfant avec broderie artisanale. Tissu fluide et confortable.",
         category: "vetements",
@@ -135,7 +135,7 @@ const products = [
     {
         id: "jel_h1",
         name: "Djelaba homme (DH01)",
-        price: 100,
+        price: 70,
         image: "assets/img/homme5.jpg",
         description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
         category: "vetements",
@@ -145,7 +145,7 @@ const products = [
     {
         id: "jel_h2",
         name: "Djelaba homme (DH02)",
-        price: 100,
+        price: 70,
         image: "assets/img/homme2.jpg",
         description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
         category: "vetements",
@@ -155,7 +155,7 @@ const products = [
     {
         id: "jel_h3",
         name: "Djelaba homme (DH03)",
-        price: 100,
+        price: 70,
         image: "assets/img/homme3.jpg",
         description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
         category: "vetements",
@@ -165,7 +165,7 @@ const products = [
     {
         id: "jel_h4",
         name: "Djelaba homme (DH04)",
-        price: 100,
+        price: 70,
         image: "assets/img/homme4.jpg",
         description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
         category: "vetements",
@@ -175,7 +175,7 @@ const products = [
     {
         id: "jel_h5",
         name: "Djelaba homme (DH05)",
-        price: 100,
+        price: 70,
         image: "assets/img/homme5.jpg",
         description: "Jellaba traditionnelle marocaine pour homme. Coupe élégante et tissu confortable pour toutes les occasions.",
         category: "vetements",
